@@ -240,6 +240,12 @@ nav li a:hover {
   #about h2 {
     font-size: 25px;
   }
+
+  .mario64,
+  .minishcap,
+  .metroid {
+    height: 150px;
+  }
 }
 
 @media (max-width: 825px) {
