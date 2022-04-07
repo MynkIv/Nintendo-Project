@@ -245,6 +245,8 @@ nav li a:hover {
   .minishcap,
   .metroid {
     background-size: contain;
+    background-attachment: scroll;
+    background-color: #f6f4f0;
   }
 }
 
