@@ -1,0 +1,249 @@
+:root {
+  --theme-color1: #da3a2f;
+}
+@font-face {
+  font-family: "theme";
+  src: url(../fonts/AlfaSlabOne-Regular.ttf);
+}
+
+nav ul {
+  background-color: #ffffff;
+  border-radius: 10px !important;
+  -webkit-box-shadow: 0px 0px 105px 10px rgba(255, 46, 63, 0.23);
+  -moz-box-shadow: 0px 0px 105px 10px rgba(255, 46, 63, 0.23);
+  box-shadow: 0px 0px 105px 10px rgba(255, 46, 63, 0.23);
+}
+
+nav li {
+  padding: 20px;
+}
+
+nav li a {
+  color: black !important;
+}
+
+nav li:hover {
+  background-color: var(--theme-color1);
+}
+nav li a:hover {
+  color: white !important;
+}
+.logo {
+  padding: 5px;
+  border-radius: 10px !important;
+  background-color: transparent !important;
+  margin-left: 20px;
+  margin-top: 20px;
+  -webkit-box-shadow: 0px 0px 105px 10px rgba(255, 46, 63, 0.23);
+  -moz-box-shadow: 0px 0px 105px 10px rgba(255, 46, 63, 0.23);
+  box-shadow: 0px 0px 105px 10px rgba(255, 46, 63, 0.23);
+}
+
+.home-link:hover {
+  border-bottom-left-radius: 10px !important;
+  border-top-left-radius: 10px !important;
+}
+.game-link:hover {
+  border-bottom-right-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+}
+
+.bckgrnd h1 {
+  font-family: "theme";
+  color: black;
+  margin-top: 96px;
+  margin-left: 96px;
+}
+
+.bckgrnd h2 {
+  font-family: "theme";
+  color: var(--theme-color1);
+  margin-left: 96px;
+  font-size: 48px;
+}
+
+.mariobckgrnd {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Mario Animation*/
+.animation {
+  overflow: hidden;
+}
+.grass,
+.sky,
+.road {
+  position: relative;
+}
+.sky {
+  height: 150px;
+  background-color: skyblue;
+}
+.grass {
+  height: 200px;
+  background-color: seagreen;
+}
+.road {
+  height: 250px;
+  background-color: dimgrey;
+  box-sizing: border-box;
+  border-top: 10px solid grey;
+  border-bottom: 10px solid grey;
+  width: 100%;
+}
+.lines {
+  box-sizing: border-box;
+  border: 5px dashed #fff;
+  height: 0px;
+  width: 100%;
+  position: absolute;
+  top: 48%;
+}
+
+.clouds img {
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.mario {
+  position: relative;
+  top: -15px;
+  left: 10px;
+  animation-name: drive;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+/*About Section*/
+
+#about {
+  background-color: #f6f4f0;
+  color: #272443;
+  padding-top: 50px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+#about h2 {
+  font-size: 50px;
+  font-family: "theme";
+}
+#about p {
+  padding: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*Games Section*/
+
+.games {
+  height: 300px;
+}
+.mario64 {
+  background: url("/images/mario64.jpg") center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  background-attachment: fixed;
+}
+.des {
+  color: #272443;
+  background-color: #f6f4f0;
+  margin: 0;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  /*In order for the text to become responsive I had to remove the fixed height to prevent the text from overflowing.*/
+  /*  height: 350px; */
+  line-height: 2em;
+}
+.desContainer {
+  padding: 50px;
+  background-color: #f6f4f0;
+}
+
+.rank {
+  font-family: "theme";
+  padding-bottom: 10px;
+}
+
+.minishcap {
+  background: url("/images/zeldaMinishCap.jpeg") center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  background-attachment: fixed;
+}
+.metroid {
+  background: url("/images/metroid.jpeg") center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  background-attachment: fixed;
+}
+.footer {
+  background-color: var(--theme-color1);
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+.footerRow ul {
+  text-decoration: none;
+  list-style: none;
+}
+.footerRow a {
+  color: white;
+  text-decoration: none;
+}
+.title {
+  font-weight: bold;
+}
+.contact {
+  border-right: 1px solid white;
+}
+.fairuse {
+  margin-top: 73px;
+  font-size: small;
+}
+
+/* Key Frames*/
+@keyframes drive {
+  from {
+    transform: translateX(-200px);
+  }
+  to {
+    transform: translateX(1500px);
+  }
+}
+
+/*Responsive*/
+@media (max-width: 600px) {
+  .bckgrnd h1 {
+    font-family: "theme";
+    color: black;
+    text-align: center;
+    font-size: 32px;
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+
+  .bckgrnd h2 {
+    font-family: "theme";
+    color: var(--theme-color1);
+    text-align: center;
+    font-size: 24px;
+    margin-left: 0px;
+  }
+
+  #about h2 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 825px) {
+  .des {
+    line-height: normal;
+  }
+}
