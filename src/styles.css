@@ -244,7 +244,7 @@ nav li a:hover {
   .mario64,
   .minishcap,
   .metroid {
-    height: 150px;
+    background-size: contain;
   }
 }
 
